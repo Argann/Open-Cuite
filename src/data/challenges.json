@@ -1,0 +1,26 @@
+[
+  {
+    "players": 2,
+    "content": "{{0}} fait un shot maison. {{1}} devra le boire !"
+  },
+  {
+    "players": 1,
+    "content": "{{0}} on t'entend plus ! Boit une gorgée !"
+  },
+  {
+    "players": 2,
+    "content": "{{0}} et {{1}}, faites un pierre-papier-ciseaux. Le ou la perdante boit trois gorgées !"
+  },
+  {
+    "players": 1,
+    "content": "A tour de rôle, donnez le nom d'une capitale européenne. La personne qui se trompe ou donne une réponse déjà dite boit 2 gorgées ! {{0}} commence."
+  },
+  {
+    "players": 1,
+    "content": "{{0}} est le maître du regard ! Jusqu'à la fin de la partie, quiconque croise son regard devra boire une gorgée !"
+  },
+  {
+    "players": 1,
+    "content": "{{0}}, t'es en veine ! Distribue 3 gorgées."
+  }
+]
