@@ -29,7 +29,8 @@ function deletePlayer(index: number) {
   emit('update:players', toRaw(playerList));
 }
 
-function updatePlayer(index: number, text: string) {
+function updatePlayer(index: number, event: Event) {
+  let text = (event.target as HTMLInputElement).value;
   playerList[index] = text.trim();
   emit('update:players', toRaw(playerList));
 }
@@ -46,9 +47,9 @@ function startGame() {
       <input
         class="player-input"
         type="text"
-        :id="index"
+        :id="'' + index"
         :value="playerList[index]"
-        @input="updatePlayer(index, $event.target.value)"
+        @input="updatePlayer(index, $event)"
       />
       <button class="player-delete" @click="deletePlayer(index)">❌</button>
     </div>

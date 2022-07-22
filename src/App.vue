@@ -16,11 +16,7 @@ enum GameState {
 
 const currentState = ref(GameState.PlayerSelection);
 
-let players = reactive([]);
-
-players.push('Tom');
-players.push('Argann');
-players.push('Jérémi');
+let players = reactive(new Array() as Array<string>);
 
 let challengeList: string[] = [];
 const challengeId = ref(0);
@@ -53,7 +49,7 @@ function onEndGame() {
   currentState.value = GameState.End;
 }
 
-function onChangePlayers(newPlayers: string[]) {
+function onChangePlayers() {
   currentState.value = GameState.PlayerSelection;
 }
 
@@ -84,9 +80,7 @@ function onPlayersUpdate(newPlayers: string[]) {
       </Challenge>
       <div class="endgame-wrapper" v-else-if="currentState === GameState.End">
         <h1 class="endgame-title">Fin de la partie !</h1>
-        <button class="endgame-button" @click="onStartGame(players.value)">
-          Rejouer
-        </button>
+        <button class="endgame-button" @click="onStartGame">Rejouer</button>
         <button class="endgame-button" @click="onChangePlayers">
           Changer les participant.e.s
         </button>
