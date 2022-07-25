@@ -1,4 +1,3 @@
 module.exports = {
-  publicPath: '/Open-Cuite/',
+  publicPath: process.env.NODE_ENV === 'production' ? '/Open-Cuite/' : '/',
 };
-  
