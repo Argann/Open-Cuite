@@ -1,7 +1,7 @@
 <template>
   <div class="header-wrapper">
     <h1>Open Cuite</h1>
-    <h2>Cumulez les grammes. Pas les pubs.</h2>
+    <h2>Bourré, mais libre.</h2>
   </div>
 </template>
 
