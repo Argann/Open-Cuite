@@ -1,7 +1,7 @@
 <template>
   <div class="header-wrapper">
     <h1>Open Cuite</h1>
-    <h2>Bourré, mais libre.</h2>
+    <a><img src="../assets/GitHub-Mark-32px.png" /></a>
   </div>
 </template>
 
@@ -21,9 +21,15 @@ h1 {
   color: #f87474;
 }
 
-h2 {
-  font-family: 'Dancing Script', cursive;
+a {
   margin-right: 1.5em;
   color: #f87474;
+  transition: filter 0.2s;
+  filter: drop-shadow(0 0 10px transparent);
+}
+
+a:hover {
+  filter: drop-shadow(0 0 10px grey);
+  cursor: pointer;
 }
 </style>
